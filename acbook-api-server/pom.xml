@@ -33,6 +33,7 @@
 		</plugins>
 	</build>
 
+	<!-- Dependency Management -->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -45,13 +46,20 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<!-- Dependencies -->
 	<dependencies>
+		<!-- Jersey Container Servlet -->
 		<dependency>
 			<groupId>org.glassfish.jersey.containers</groupId>
 			<artifactId>jersey-container-servlet</artifactId>
-			<version>2.22.1</version>
 		</dependency>
-		<!-- uncomment this to get JSON support <dependency> <groupId>org.glassfish.jersey.media</groupId> 
-			<artifactId>jersey-media-moxy</artifactId> </dependency> -->
+
+		<!-- GSON -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.3</version>
+		</dependency>
 	</dependencies>
+
 </project>

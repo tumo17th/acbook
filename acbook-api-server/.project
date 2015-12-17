@@ -3,6 +3,7 @@
 	<name>acbook-api-server</name>
 	<comment></comment>
 	<projects>
+		<project>acbook-core</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
