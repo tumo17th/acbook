@@ -9,14 +9,14 @@ import com.acbook.server.GsonMessageProvider;
 
 public class Application extends ResourceConfig {
 
-	private static final String[] packages = { "com.acbook.resource" };
+    private static final String[] packages = { "com.acbook.resource" };
 
-	public Application() {
-		packages(packages);
-		register(LoggingFilter.class);
-		register(CharsetResponseFilter.class);
-		register(GsonMessageProvider.class);
-		property(ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE, true);
-	}
+    public Application() {
+        packages(packages);
+        register(LoggingFilter.class);
+        register(CharsetResponseFilter.class);
+        register(GsonMessageProvider.class);
+        property(ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE, true);
+    }
 
 }

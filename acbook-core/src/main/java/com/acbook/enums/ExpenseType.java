@@ -6,6 +6,6 @@ package com.acbook.enums;
  */
 public enum ExpenseType {
 
-	FOOD, COMMODITY, EVENT, OTHER;
+    FOOD, COMMODITY, EVENT, OTHER;
 
 }
