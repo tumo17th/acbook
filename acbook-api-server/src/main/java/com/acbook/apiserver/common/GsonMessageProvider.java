@@ -15,7 +15,6 @@ import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.ext.MessageBodyReader;
 import javax.ws.rs.ext.MessageBodyWriter;
 
-import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -29,8 +28,7 @@ public class GsonMessageProvider implements MessageBodyWriter<Object>, MessageBo
     private Gson getGson() {
         if (gson == null) {
             final GsonBuilder gsonBuilder = new GsonBuilder();
-            gson = gsonBuilder.disableHtmlEscaping().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                    .setPrettyPrinting().serializeNulls().create();
+            gson = gsonBuilder.disableHtmlEscaping().setPrettyPrinting().serializeNulls().create();
         }
         return gson;
     }

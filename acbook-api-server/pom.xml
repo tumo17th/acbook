@@ -33,25 +33,13 @@
         </plugins>
     </build>
 
-    <!-- Dependency Management -->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.glassfish.jersey</groupId>
-                <artifactId>jersey-bom</artifactId>
-                <version>${jersey.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <!-- Dependencies -->
     <dependencies>
         <!-- Jersey Container Servlet -->
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet</artifactId>
+            <version>${jersey.version}</version>
         </dependency>
 
         <!-- GSON -->
