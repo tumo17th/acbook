@@ -1,4 +1,4 @@
-package com.acbook.server;
+package com.acbook.apiserver.common;
 
 import java.io.IOException;
 

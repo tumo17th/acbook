@@ -1,18 +1,18 @@
-package com.acbook;
+package com.acbook.apiserver;
 
 import org.glassfish.jersey.filter.LoggingFilter;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.ServerProperties;
 
-import com.acbook.server.CharsetResponseFilter;
-import com.acbook.server.GsonMessageProvider;
+import com.acbook.apiserver.common.CharsetResponseFilter;
+import com.acbook.apiserver.common.GsonMessageProvider;
 
-public class Application extends ResourceConfig {
+public class ACBookApplication extends ResourceConfig {
 
-    private static final String[] packages = { "com.acbook.resource" };
+    private static final String[] RESOURCE_PACKAGES = { "com.acbook.apiserver.resources" };
 
-    public Application() {
-        packages(packages);
+    public ACBookApplication() {
+        packages(RESOURCE_PACKAGES);
         register(LoggingFilter.class);
         register(CharsetResponseFilter.class);
         register(GsonMessageProvider.class);
