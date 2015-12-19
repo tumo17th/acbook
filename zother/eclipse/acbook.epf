@@ -1,4 +1,4 @@
-#Sat Dec 19 01:07:40 JST 2015
+#Sun Dec 20 03:20:57 JST 2015
 /instance/org.eclipse.jdt.ui/sp_cleanup.add_missing_annotations=true
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.comment.indent_parameter_description=true
 @org.eclipse.ui.editors=3.9.0.v20150213-1939
@@ -66,6 +66,7 @@
 @org.eclipse.ui=3.107.0.v20150507-1945
 /instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.exception.name=e
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.alignment_for_compact_if=16
+/instance/org.eclipse.wst.html.core/indentationChar=space
 /instance/org.eclipse.jdt.ui/sp_cleanup.add_missing_nls_tags=false
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
 @org.eclipse.wst.server.core=1.7.0.v201508271522
@@ -88,6 +89,7 @@
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_opening_brace_in_constructor_declaration=insert
 /instance/org.eclipse.ui.workbench/RUN_IN_BACKGROUND=true
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_closing_bracket_in_array_allocation_expression=do not insert
+@org.eclipse.epp.logging.aeri.ui=1.0.1.v20150913-0716
 /instance/org.eclipse.core.runtime/content-types/org.eclipse.wst.html.core.htmlsource/charset=UTF-8
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_colon_in_for=insert
 /instance/org.eclipse.e4.ui.workbench.renderers.swt/enableMRU=true
@@ -123,7 +125,7 @@
 /instance/org.eclipse.jdt.ui/sp_cleanup.remove_unused_imports=false
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_opening_paren_in_annotation_type_member_declaration=do not insert
 /instance/org.eclipse.rse.ui/org.eclipse.rse.preferences.order.connections=tumo-PC.Local
-/instance/org.eclipse.recommenders.completion.rcp/completion_tips_seen=org.eclipse.recommenders.completion.rcp.tips.types
+/instance/org.eclipse.recommenders.completion.rcp/completion_tips_seen=org.eclipse.recommenders.completion.rcp.tips.discovery\:org.eclipse.recommenders.completion.rcp.tips.types
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.keep_empty_array_initializer_on_one_line=false
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_after_ellipsis=insert
 @org.eclipse.rse.ui=3.3.100.201503112018
@@ -189,6 +191,7 @@
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_opening_paren_in_while=insert
 /instance/org.eclipse.ui.workbench//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.wrap_before_or_operator_multicatch=true
+@org.eclipse.recommenders.rcp=2.2.4.v20150914-0857
 /instance/org.eclipse.wst.ws.service.policy/org.eclipse.wst.ws.service.policy.ui.servicepols.wsiprofilecomp.wsissbp.defaultProtocol=http\://schemas.xmlsoap.org/wsdl/soap/
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_opening_paren_in_for=insert
 /instance/org.eclipse.mylyn.tasks.ui/org.eclipse.mylyn.tasks.ui.filters.nonmatching=true
@@ -223,8 +226,8 @@
 /instance/org.eclipse.jdt.ui/spelling_ignore_java_strings=true
 /instance/org.eclipse.jdt.ui/sp_cleanup.add_missing_methods=false
 /instance/org.eclipse.jdt.ui/sp_cleanup.use_blocks=false
-/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_opening_brace_in_type_declaration=insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_opening_brace_in_type_declaration=insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_closing_paren_in_enum_constant=do not insert
 /instance/org.eclipse.jdt.ui/sp_cleanup.remove_private_constructors=true
 /instance/org.eclipse.ui.editors/printMarginColumn=120
@@ -242,6 +245,7 @@
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_after_question_in_conditional=insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.codeComplete.staticFieldPrefixes=
 /configuration/org.eclipse.ui.ide/MAX_RECENT_WORKSPACES=5
+/instance/org.eclipse.wst.html.core/indentationSize=4
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_comma_in_enum_constant_arguments=do not insert
 /instance/org.eclipse.ui.editors/showWhitespaceCharacters=true
 @org.eclipse.core.resources=3.10.1.v20150725-1910
@@ -253,7 +257,7 @@
 /instance/org.eclipse.egit.core/GitRepositoriesView.GitDirectories=C\:\\Users\\tumo\\git\\acbook\\.git;
 /instance/org.eclipse.ui.workbench/PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.m2e.discovery;
 /instance/org.eclipse.jdt.debug/org.eclipse.jdt.debug.suspend_for_breakpoints_during_evaluation=true
-/instance/org.eclipse.jdt.launching/org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1450371872364">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1450098690864" name\="jre1.8.0_65" path\="C\:\\Program Files\\Java\\jre1.8.0_65"/>\r\n<vm id\="1450371872364" name\="jdk1.8.0_65" path\="C\:\\Program Files\\Java\\jdk1.8.0_65"/>\r\n</vmType>\r\n</vmSettings>\r\n
+/instance/org.eclipse.jdt.launching/org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1450371872364" defaultVMConnector\="">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1450098690864" name\="jre1.8.0_65" path\="C\:\\Program Files\\Java\\jre1.8.0_65"/>\r\n<vm id\="1450371872364" name\="jdk1.8.0_65" path\="C\:\\Program Files\\Java\\jdk1.8.0_65"/>\r\n</vmType>\r\n</vmSettings>\r\n
 /instance/org.eclipse.rse.core/activeuserprofiles=DESKTOP-JTRA6QJ;Team;tumo-PC
 /instance/org.eclipse.jdt.ui/sp_cleanup.add_generated_serial_version_id=false
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.codeComplete.staticFieldSuffixes=
@@ -262,7 +266,9 @@
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_after_comma_in_parameterized_type_reference=insert
 @org.eclipse.wst.ws.service.policy=1.0.450.v201505131719
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_after_colon_in_labeled_statement=insert
+/instance/org.eclipse.wst.html.core/lineWidth=120
 /instance/org.eclipse.jdt.ui/editor_save_participant_org.eclipse.jdt.ui.postsavelistener.cleanup=true
+@org.eclipse.wst.html.core=1.1.802.v201501312139
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_new_line_after_opening_brace_in_array_initializer=do not insert
 /configuration/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.codeComplete.staticFinalFieldPrefixes=
@@ -282,6 +288,7 @@
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_comma_in_parameterized_type_reference=do not insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_after_comma_in_method_declaration_parameters=insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.tabulation.size=4
+@org.eclipse.ui.browser=3.4.300.v20150429-0602
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_opening_paren_in_method_declaration=do not insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_after_opening_angle_bracket_in_type_parameters=do not insert
 /instance/org.eclipse.jdt.ui/useQuickDiffPrefPage=true
@@ -302,6 +309,7 @@
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_after_unary_operator=do not insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.indent_body_declarations_compare_to_type_header=true
 /instance/org.eclipse.jdt.ui/sourceHoverBackgroundColor=255,255,225
+/instance/org.eclipse.epp.logging.aeri.ui/configured=true
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.continuation_indentation=2
 /instance/org.eclipse.jdt.ui/sp_cleanup.remove_unused_private_fields=true
 /instance/org.eclipse.wst.jsdt.ui/org.eclipse.wst.jsdt.ui.editor.tab.width=
@@ -339,6 +347,7 @@
 /instance/org.eclipse.jdt.ui/sp_cleanup.add_missing_override_annotations=true
 /instance/org.eclipse.jdt.ui/sp_cleanup.use_parentheses_in_expressions=false
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.keep_then_statement_on_same_line=false
+/instance/org.eclipse.epp.logging.aeri.ui/action=IGNORE
 /instance/org.eclipse.jdt.ui/sp_cleanup.make_variable_declarations_final=false
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_new_line_in_empty_annotation_declaration=insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_colon_in_labeled_statement=do not insert
@@ -368,6 +377,7 @@
 /instance/org.eclipse.wst.jsdt.ui/useAnnotationsPrefPage=true
 @org.eclipse.e4.ui.workbench.renderers.swt=0.13.0.v20150901-1347
 @org.eclipse.wst.xml.ui=1.1.501.v201501212057
+/instance/org.eclipse.wst.html.core/inlineElements=small,big,sub,img,strong,select,basefont,title,sup,br,abbr,a,b,acronym,strike,em,i,label,td,input,q,s,th,u,cite,li,font,span
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.brace_position_for_switch=end_of_line
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_new_line_before_catch_in_try_statement=do not insert
 /instance/org.eclipse.jdt.ui/sp_cleanup.sort_members_all=false
@@ -380,6 +390,7 @@
 /instance/org.eclipse.jdt.ui/content_assist_proposals_foreground=0,0,0
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_new_line_before_finally_in_try_statement=do not insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+/instance/org.eclipse.wst.jsdt.web.core/jspIndexState=4
 /instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.formatterprofiles.version=12
 /instance/org.eclipse.mylyn.monitor.ui/org.eclipse.mylyn.monitor.activity.tracking.enabled.checked=true
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_opening_brace_in_enum_constant=insert
@@ -391,12 +402,13 @@
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_closing_paren_in_catch=do not insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.alignment_for_binary_expression=16
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.indent_statements_compare_to_block=true
+@org.eclipse.wst.jsdt.web.core=1.0.800.v201505130300
 @org.eclipse.ui.workbench=3.107.0.v20150825-2206
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_new_line_in_empty_anonymous_type_declaration=insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_between_empty_brackets_in_array_allocation_expression=do not insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_after_opening_paren_in_switch=do not insert
 /instance/org.eclipse.jst.server.tomcat.core/locationorg.eclipse.jst.server.tomcat.runtime.80=C\:/Program Files/Apache Software Foundation/apache-tomcat-8.0.30
-/instance/org.eclipse.egit.ui/commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>Modify eclipse settings&\#x0A;&\#x0A;1.Set export settings&\#x0A;2.Adjust deployment assembly</message>\r\n<message>Organize system structure&\#x0A;&\#x0A;1.Set GsonProvider&\#x0A;2.Set LoggingFilter&\#x0A;3.Set CharsetEncodingFilter&\#x0A;4.Add Model ExpenseType&\#x0A;5.Adjust project&apos;s relation</message>\r\n</messages>
+/instance/org.eclipse.egit.ui/commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>Modify some parts&\#x0A;&\#x0A;1.Create service package.&\#x0A;2.Modify dependency structure.&\#x0A;3.Change Gson writing style into LowerCamelCase&\#x0A;4.Modify index.jsp</message>\r\n<message>Change the version of DynamicWebModule from 2.5 to 3.0</message>\r\n<message>Change the version of DynamicWebModule from 2.5 into 3.0</message>\r\n<message>Modify eclipse settings&\#x0A;&\#x0A;1.Set export settings&\#x0A;2.Adjust deployment assembly</message>\r\n<message>Organize system structure&\#x0A;&\#x0A;1.Set GsonProvider&\#x0A;2.Set LoggingFilter&\#x0A;3.Set CharsetEncodingFilter&\#x0A;4.Add Model ExpenseType&\#x0A;5.Adjust project&apos;s relation</message>\r\n</messages>
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_new_line_before_closing_brace_in_array_initializer=do not insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.indent_body_declarations_compare_to_enum_declaration_header=true
@@ -424,6 +436,7 @@
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_after_comma_in_superinterfaces=insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_after_opening_angle_bracket_in_parameterized_type_reference=do not insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_colon_in_case=do not insert
+/instance/org.eclipse.recommenders.rcp/news-last-check=1450509058486
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_after_opening_paren_in_while=do not insert
 @org.eclipse.jdt.debug=3.9.0.v20150528-1838
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.alignment_for_parameters_in_method_declaration=16
@@ -437,6 +450,7 @@
 /instance/org.eclipse.team.ui/org.eclipse.team.ui.first_time=false
 /instance/org.eclipse.search/org.eclipse.search.defaultPerspective=org.eclipse.search.defaultPerspective.none
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_after_opening_paren_in_if=do not insert
+/instance/org.eclipse.ui.browser/browsers=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<web-browsers current\="0">\r\n<system/>\r\n<external location\="C\:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" name\="Firefox"/>\r\n<external location\="C\:\\Program Files\\Internet Explorer\\iexplore.exe" name\="Internet Explorer"/>\r\n</web-browsers>
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_between_brackets_in_array_type_reference=do not insert
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_semicolon=do not insert
 file_export_version=3.0
