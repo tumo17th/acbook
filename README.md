@@ -1,4 +1,4 @@
-ACBook / ‰ÆŒv•ëƒAƒvƒŠ
+ACBook / å®¶è¨ˆç°¿ã‚¢ãƒ—ãƒª
 ======
 
 You can keep your accounts.
