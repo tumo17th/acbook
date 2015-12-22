@@ -13,6 +13,7 @@ public class ACBookApplication extends ResourceConfig {
 
     public ACBookApplication() {
         packages(RESOURCE_PACKAGES);
+        // register(ACBookContextLoaderListener.class);
         register(LoggingFilter.class);
         register(CharsetResponseFilter.class);
         register(GsonMessageProvider.class);
