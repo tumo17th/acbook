@@ -1,4 +1,4 @@
-package com.acbook.enums;
+package com.acbook.common.enums;
 
 public enum ExpenseKind {
 

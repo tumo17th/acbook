@@ -2,7 +2,7 @@ package com.acbook.model;
 
 import java.util.Date;
 
-import com.acbook.enums.ExpenseType;
+import com.acbook.common.enums.ExpenseType;
 
 /**
  * 出費モデル

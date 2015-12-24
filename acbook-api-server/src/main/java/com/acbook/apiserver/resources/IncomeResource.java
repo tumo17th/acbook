@@ -9,7 +9,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.acbook.response.ACBookResponse;
+import com.acbook.rest.response.ACBookResponse;
 
 @Path("/resource")
 @Produces(MediaType.APPLICATION_JSON)

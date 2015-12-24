@@ -1,4 +1,4 @@
-package com.acbook.response;
+package com.acbook.rest.response;
 
 import java.util.ArrayList;
 import java.util.List;

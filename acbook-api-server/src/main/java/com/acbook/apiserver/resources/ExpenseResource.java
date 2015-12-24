@@ -15,8 +15,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.acbook.model.Expense;
-import com.acbook.response.ACBookResponse;
-import com.acbook.response.GetExpenseResponse;
+import com.acbook.rest.response.ACBookResponse;
+import com.acbook.rest.response.GetExpenseResponse;
 import com.acbook.service.GetExpenseService;
 
 @Path("/resource")
