@@ -21,7 +21,7 @@
     <!-- Embeded data -->
     <jdbc:embedded-database id="dataSource" type="H2">
         <jdbc:script location="classpath:ddl/sql/create.sql" />
-        <!-- <jdbc:script location="classpath:ddl/sql/insert.sql" /> -->
+        <jdbc:script location="classpath:ddl/sql/insert.sql" />
     </jdbc:embedded-database>
 
 </beans>
