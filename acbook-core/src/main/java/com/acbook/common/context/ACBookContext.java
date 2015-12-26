@@ -1,7 +1,6 @@
 package com.acbook.common.context;
 
 import java.util.Map;
-import java.util.Map.Entry;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -29,16 +28,24 @@ public class ACBookContext {
     private static ACBookConfig acbookConfig;
 
     // Initialize //////////////////////////////////////////////////////////////////////////////////////////////////////
+    /** Initialize ACBookContext >> Create all instances of acbook-core */
     public static void initialize() {
         appCtx = new ClassPathXmlApplicationContext("applicationContext.xml");
         acbookConfig = appCtx.getBean(ACBookConfig.class);
 
-        Map<String, IService> serviceMap = appCtx.getBeansOfType(IService.class);
-        for (Entry<String, IService> entry : serviceMap.entrySet()) {
-            entry.getValue().initialize();
-        }
+        initializeServices();
     }
 
+    /** Initialize all Services >> Inject all Dao instances. */
+    private static void initializeServices() {
+        Map<String, IService> serviceMap = appCtx.getBeansOfType(IService.class);
+        serviceMap.values().stream().forEach(iservice -> {
+            iservice.initialize();
+            System.out.println(iservice);
+        });
+    }
+
+    // Get Services ////////////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * Get ExpenseService instance.
      * @return ExpenseService instance.
@@ -47,6 +54,7 @@ public class ACBookContext {
         return appCtx.getBean(ExpenseService.class);
     }
 
+    // Get Dao /////////////////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * Get Configured Dao Instance. (ex DaoMoc, DaoDerby, DaoMySQL)
      * @param clazz Dao Interface
