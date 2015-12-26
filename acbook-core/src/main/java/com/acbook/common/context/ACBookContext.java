@@ -1,22 +1,64 @@
 package com.acbook.common.context;
 
+import java.util.Map;
+import java.util.Map.Entry;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.acbook.common.config.ACBookConfig;
+import com.acbook.model.dao.IDao;
+import com.acbook.service.ExpenseService;
+import com.acbook.service.IService;
+
+/**
+ * Manage all instances of acbook-core by loading ApplicationContext (provided by Spring).
+ * All access such as getting Services and getting Config properties is done via this class.
+ * 
+ * ApplicationContext (provided by Spring)をloadして、acbook-coreのインスタンス管理全体を司るクラス
+ * Serviceの取得、Configの取得などは、全てこのクラスを通して行う
+ * 
+ * @author tumo
+ */
 public class ACBookContext {
 
+    /** All instances in acbook-core loaded by Spring */
     private static ApplicationContext appCtx;
 
+    /** All config properties in acbook-core */
+    private static ACBookConfig acbookConfig;
+
+    // Initialize //////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void initialize() {
         appCtx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        acbookConfig = appCtx.getBean(ACBookConfig.class);
+
+        Map<String, IService> serviceMap = appCtx.getBeansOfType(IService.class);
+        for (Entry<String, IService> entry : serviceMap.entrySet()) {
+            entry.getValue().initialize();
+        }
     }
 
-    public static ApplicationContext getContext() {
-        return appCtx;
+    /**
+     * Get ExpenseService instance.
+     * @return ExpenseService instance.
+     */
+    public static ExpenseService getExpenseService() {
+        return appCtx.getBean(ExpenseService.class);
     }
 
+    /**
+     * Get Configured Dao Instance. (ex DaoMoc, DaoDerby, DaoMySQL)
+     * @param clazz Dao Interface
+     * @return Dao Instance
+     */
+    public static IDao getDao(Class<? extends IDao> clazz) {
+        return appCtx.getBean(clazz.getSimpleName() + acbookConfig.getDaoType(), clazz);
+    }
+
+    // Close ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void close() {
         ((ClassPathXmlApplicationContext)appCtx).close();
     }
-
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }

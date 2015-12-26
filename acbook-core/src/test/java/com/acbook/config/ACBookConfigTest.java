@@ -13,7 +13,7 @@ public class ACBookConfigTest extends TestCase {
     @Test
     public void testRunACBookConfig() {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-        System.out.println(ctx.getBean(ACBookConfig.class).getTest());
+        System.out.println(ctx.getBean(ACBookConfig.class).getDaoType());
         ((ClassPathXmlApplicationContext)ctx).close();
     }
 

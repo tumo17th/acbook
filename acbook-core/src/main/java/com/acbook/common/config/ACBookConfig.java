@@ -6,18 +6,23 @@ import org.springframework.stereotype.Component;
 @Component
 public class ACBookConfig {
 
-    @Value("${test}")
-    private String test;
+    @Value("${daoType}")
+    private String daoType;
 
-    public ACBookConfig() {
+    /**
+     * Get Configured DaoType
+     * @return DaoType (Moc, InnerDB, OuterDB)
+     */
+    public String getDaoType() {
+        return daoType;
     }
 
-    public String getTest() {
-        return test;
-    }
-
-    public void setTest(String test) {
-        this.test = test;
+    /**
+     * Set Configured DaoType
+     * @param DaoType (Moc, InnerDB, OuterDB)
+     */
+    public void setDaoType(String daoType) {
+        this.daoType = daoType;
     }
 
 }

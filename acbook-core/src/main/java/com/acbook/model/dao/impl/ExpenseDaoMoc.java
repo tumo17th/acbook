@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.acbook.common.enums.ExpenseType;
 import com.acbook.model.Expense;
 import com.acbook.model.dao.ExpenseDao;
 
+@Repository("ExpenseDaoMoc")
 public class ExpenseDaoMoc implements ExpenseDao {
 
     @Override
