@@ -14,6 +14,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import com.acbook.common.context.ACBookContext;
 import com.acbook.model.Expense;
 import com.acbook.rest.response.ACBookResponse;
 import com.acbook.rest.response.GetExpenseResponse;
@@ -26,7 +27,8 @@ public class ExpenseResource {
     @GET
     @Path("/expense")
     public Response getExpense(@QueryParam("from") Date from, @QueryParam("to") Date to) {
-        List<Expense> expenseList = new GetExpenseService().getExpenseList(from, to);
+        GetExpenseService getExpenseService = ACBookContext.getContext().getBean(GetExpenseService.class);
+        List<Expense> expenseList = getExpenseService.getExpenseList(from, to);
         return Response.ok(new GetExpenseResponse(true, null, expenseList)).build();
     }
 
