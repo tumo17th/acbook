@@ -1,5 +1,7 @@
 package com.acbook.common.context;
 
+import static com.acbook.common.consts.ACBookConst.CRLF;
+
 import java.util.Map;
 
 import org.springframework.context.ApplicationContext;
@@ -38,6 +40,7 @@ public class ACBookContext {
 
     /** Initialize all Services >> Inject all Dao instances. */
     private static void initializeServices() {
+        System.out.println(CRLF + "Initialize ACBook Services...");
         Map<String, IService> serviceMap = appCtx.getBeansOfType(IService.class);
         serviceMap.values().stream().forEach(iservice -> {
             iservice.initialize();

@@ -1,5 +1,7 @@
 package com.acbook.apiserver.common;
 
+import static com.acbook.common.consts.ACBookConst.CRLF;
+
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
@@ -9,9 +11,9 @@ public class ACBookContextLoaderListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent arg0) {
-        System.out.println("----- ACBook Context Initialize Start -----");
+        System.out.println(CRLF + "----- ACBook Context Initialize Start -----" + CRLF);
         ACBookContext.initialize();
-        System.out.println("----- ACBook Context Initialize Finish -----");
+        System.out.println(CRLF + "----- ACBook Context Initialize Finish -----" + CRLF);
     }
 
     @Override
