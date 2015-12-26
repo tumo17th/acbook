@@ -1,4 +1,4 @@
-package com.acbook.model.dao;
+package com.acbook.dao;
 
 import java.util.List;
 

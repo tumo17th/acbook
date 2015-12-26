@@ -1,4 +1,4 @@
-package com.acbook.model.dao.impl;
+package com.acbook.dao.impl;
 
 import java.util.List;
 
@@ -8,10 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 
+import com.acbook.dao.ExpenseDao;
 import com.acbook.model.Expense;
-import com.acbook.model.dao.ExpenseDao;
 
+@Repository("ExpenseDaoH2")
 public class ExpenseDaoH2 implements ExpenseDao {
 
     private JdbcTemplate template;

@@ -1,4 +1,4 @@
-package com.acbook.model.dao;
+package com.acbook.dao;
 
 /**
  * Marker Interface of Dao (Data Access Object) of ACBook

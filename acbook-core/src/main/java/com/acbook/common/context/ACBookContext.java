@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.acbook.common.config.ACBookConfig;
-import com.acbook.model.dao.IDao;
+import com.acbook.dao.IDao;
 import com.acbook.service.ExpenseService;
 import com.acbook.service.IService;
 
