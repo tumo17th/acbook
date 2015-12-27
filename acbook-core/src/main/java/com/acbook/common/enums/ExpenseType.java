@@ -1,5 +1,8 @@
 package com.acbook.common.enums;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * 出費タイプ
  * @author tumo
@@ -36,6 +39,8 @@ public enum ExpenseType {
     /** ジム */
     GYM(170, "ジム", ExpenseKind.FIXED);
 
+    private static Logger logger = LoggerFactory.getLogger(ExpenseType.class);
+
     /** 出費タイプID */
     private int expenseTypeId;
     /** 出費タイプ名称 */
@@ -50,6 +55,19 @@ public enum ExpenseType {
         this.expenseKind = expenseKind;
     }
 
+    // Utils ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public static ExpenseType getExpenseType(Integer expenseId) {
+        for (ExpenseType expenseType : ExpenseType.values()) {
+            if (expenseId.intValue() == expenseType.getExpenseTypeId()) {
+                return expenseType;
+            }
+        }
+
+        logger.warn("There is no matched ExpenseType");
+        return OTHER;
+    }
+
+    // Getter & Setter /////////////////////////////////////////////////////////////////////////////////////////////////
     public int getExpenseTypeId() {
         return expenseTypeId;
     }
