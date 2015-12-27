@@ -6,7 +6,6 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -20,7 +19,7 @@ public class ExpenseDaoH2 implements ExpenseDao {
 
     private JdbcTemplate template;
 
-    @Autowired
+    // @Autowired
     public void setDataSource(DataSource ds) {
         template = new JdbcTemplate(ds);
     }

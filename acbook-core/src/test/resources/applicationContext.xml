@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd
+    ">
+
+    <context:component-scan base-package="com.acbook" />
+    <context:property-placeholder location="classpath*:acbook.properties" />
+
+    <!--
+        Run H2-database as a in-memory mode at test.
+        >> テストでは、H2データベースをインメモリモードで起動する。
+    -->
+    <!-- DataSource -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" />
+
+    <!-- Embedded data -->
+    <jdbc:embedded-database id="dataSource" type="H2">
+        <jdbc:script location="classpath:ddl/sql/create.sql" />
+        <jdbc:script location="classpath:ddl/sql/insert.sql" />
+    </jdbc:embedded-database>
+
+</beans>
