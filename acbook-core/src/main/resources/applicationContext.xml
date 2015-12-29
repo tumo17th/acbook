@@ -10,21 +10,12 @@
     <context:component-scan base-package="com.acbook" />
     <context:property-placeholder location="classpath*:acbook.properties" />
 
-    <!-- 
-        Application can't set URL property to H2-database of embedded mode.(It run as a in-memory mode)
-        @see org.springframework.jdbc.datasource.embedded.H2EmbeddedDatabaseConfigurer#configureConnectionProperties
-        >> So ACBook create H2-database connection manually in ACBookContext.
-        
-        H2-データベースのembedded modeでは、URLを外からSetできない(インメモリで起動してしまう)
-        @see org.springframework.jdbc.datasource.embedded.H2EmbeddedDatabaseConfigurer#configureConnectionProperties
-        >> よって、ACBookでは、ACBookContextの中で手動でH2-データベースのコネクションを生成することにした。
-     -->
     <!-- DataSource -->
-    <!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> -->
-    <!-- <property name="driverClassName" value="org.h2.Driver" /> -->
-    <!-- <property name="url" value="jdbc:h2:~/h2/test" /> -->
-    <!-- <property name="username" value="sa" /> -->
-    <!-- <property name="password" value="" /> -->
-    <!-- </bean> -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.h2.Driver" />
+        <property name="url" value="jdbc:h2:~/h2/sample" />
+        <property name="username" value="sa" />
+        <property name="password" value="" />
+    </bean>
 
 </beans>

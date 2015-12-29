@@ -10,13 +10,13 @@
     <context:component-scan base-package="com.acbook" />
     <context:property-placeholder location="classpath*:acbook.properties" />
 
+    <!-- DataSource -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" />
+
     <!--
         Run H2-database as a in-memory mode at test.
         >> テストでは、H2データベースをインメモリモードで起動する。
     -->
-    <!-- DataSource -->
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" />
-
     <!-- Embedded data -->
     <jdbc:embedded-database id="dataSource" type="H2">
         <jdbc:script location="classpath:ddl/sql/create.sql" />
