@@ -29,6 +29,7 @@ public class ExpenseDaoH2 implements ExpenseDao {
 
     @Override
     public List<Expense> find() {
+        // Enumをうまく変換する方法がわからなかったので、ひとまずBeanPropertyRowMapperは使わず、ベタに処理を書くことにした。
         // return template.query(SELECT_ALL, new BeanPropertyRowMapper<Expense>(Expense.class));
         return template.query(SELECT_ALL, new RowMapper<Expense>() {
             @Override
