@@ -22,7 +22,7 @@ public class ExpenseServiceImpl implements ExpenseService {
 
     @Override
     public List<Expense> getExpenseList(Date from, Date to) {
-        return expenseDao.find();
+        return expenseDao.find(from, to);
     }
 
 }

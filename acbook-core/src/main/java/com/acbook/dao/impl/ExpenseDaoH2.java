@@ -2,6 +2,7 @@ package com.acbook.dao.impl;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 
 import javax.sql.DataSource;
@@ -27,9 +28,12 @@ public class ExpenseDaoH2 implements ExpenseDao {
 
     private static final String SELECT_ALL = "SELECT * FROM expense";
 
+    /**
+     * {@inheritDoc}
+     * Enumをうまく変換する方法がわからなかったので、ひとまずBeanPropertyRowMapperは使わず、ベタに処理を書くことにした。
+     */
     @Override
-    public List<Expense> find() {
-        // Enumをうまく変換する方法がわからなかったので、ひとまずBeanPropertyRowMapperは使わず、ベタに処理を書くことにした。
+    public List<Expense> find(Date from, Date to) {
         // return template.query(SELECT_ALL, new BeanPropertyRowMapper<Expense>(Expense.class));
         return template.query(SELECT_ALL, new RowMapper<Expense>() {
             @Override

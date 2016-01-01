@@ -14,7 +14,7 @@ import com.acbook.model.Expense;
 public class ExpenseDaoMoc implements ExpenseDao {
 
     @Override
-    public List<Expense> find() {
+    public List<Expense> find(Date from, Date to) {
         List<Expense> expenseList = new ArrayList<>();
         expenseList.add(new Expense(0, ExpenseType.FOOD, "朝定食", 400, new Date(), 1, new Date()));
         expenseList.add(new Expense(1, ExpenseType.FOOD, "コンビニ", 450, new Date(), 2, new Date()));
