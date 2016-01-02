@@ -30,7 +30,7 @@ public class ExpenseDaoH2 implements ExpenseDao {
 
     /**
      * {@inheritDoc}
-     * Enumをうまく変換する方法がわからなかったので、ひとまずBeanPropertyRowMapperは使わず、ベタに処理を書くことにした。
+     * <p>Enumをうまく変換する方法がわからなかったので、ひとまずBeanPropertyRowMapperは使わず、ベタに処理を書くことにした。</p>
      */
     @Override
     public List<Expense> find(Date from, Date to) {
@@ -49,6 +49,10 @@ public class ExpenseDaoH2 implements ExpenseDao {
                 return expense;
             }
         });
+    }
+
+    @Override
+    public void create(List<Expense> expenseList) {
     }
 
 }

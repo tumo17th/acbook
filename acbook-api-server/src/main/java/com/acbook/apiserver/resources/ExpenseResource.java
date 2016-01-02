@@ -40,7 +40,12 @@ public class ExpenseResource {
     @PUT
     @Path("/expense")
     public Response createExpense() {
-        return Response.ok().build();
+        boolean result = ACBookContext.getExpenseService().createExpenses(null);
+        if (!result) {
+            ACBookResponse res = new ACBookResponse(false, Arrays.asList("ID=3のレコード作成に失敗しました"));
+            return Response.ok(res).build();
+        }
+        return Response.ok(new ACBookResponse(true, null)).build();
     }
 
     @DELETE

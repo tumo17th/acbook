@@ -16,4 +16,10 @@ public interface ExpenseDao extends IDao {
      */
     List<Expense> find(Date from, Date to);
 
+    /**
+     * <p>Insert ExpenseList Records</p>
+     * 
+     * @param expenseList target ExpenseList
+     */
+    void create(List<Expense> expenseList);
 }

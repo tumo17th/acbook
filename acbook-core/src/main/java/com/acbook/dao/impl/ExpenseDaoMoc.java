@@ -23,4 +23,8 @@ public class ExpenseDaoMoc implements ExpenseDao {
         return expenseList;
     }
 
+    @Override
+    public void create(List<Expense> expenseList) {
+    }
+
 }

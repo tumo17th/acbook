@@ -25,4 +25,9 @@ public class ExpenseServiceImpl implements ExpenseService {
         return expenseDao.find(from, to);
     }
 
+    @Override
+    public boolean createExpenses(List<Expense> expenseList) {
+        return false;
+    }
+
 }
