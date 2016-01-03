@@ -30,4 +30,9 @@ public class ExpenseServiceImpl implements ExpenseService {
         return false;
     }
 
+    @Override
+    public boolean deleteExpenses(List<Integer> deleteIdList) {
+        return false;
+    }
+
 }

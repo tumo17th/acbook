@@ -20,8 +20,15 @@ public interface ExpenseService extends IService {
      * <p>Insert Expense Records.</p>
      * 
      * @param expenseList target ExpenseList
-     * @return success Flag
+     * @return successFlg
      */
     boolean createExpenses(List<Expense> expenseList);
 
+    /**
+     * <p>Delete Expense Records.</p>
+     * 
+     * @param deleteIdList target ID List
+     * @return successFlg
+     */
+    boolean deleteExpenses(List<Integer> deleteIdList);
 }
