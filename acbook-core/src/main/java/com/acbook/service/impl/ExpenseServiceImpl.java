@@ -35,4 +35,9 @@ public class ExpenseServiceImpl implements ExpenseService {
         return false;
     }
 
+    @Override
+    public boolean updateExpenses(List<Expense> expenseList) {
+        return false;
+    }
+
 }

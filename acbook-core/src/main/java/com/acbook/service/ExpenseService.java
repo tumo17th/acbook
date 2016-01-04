@@ -31,4 +31,13 @@ public interface ExpenseService extends IService {
      * @return successFlg
      */
     boolean deleteExpenses(List<Integer> deleteIdList);
+
+    /**
+     * <p>Update Expense Records.</p>
+     * 
+     * @param expenseList target ExpenseList
+     * @return successFlg
+     */
+    boolean updateExpenses(List<Expense> expenseList);
+
 }
