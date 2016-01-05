@@ -55,4 +55,12 @@ public class ExpenseDaoH2 implements ExpenseDao {
     public void create(List<Expense> expenseList) {
     }
 
+    @Override
+    public void delete(List<Integer> targetIdList) {
+    }
+
+    @Override
+    public void update(List<Expense> expenseList) {
+    }
+
 }

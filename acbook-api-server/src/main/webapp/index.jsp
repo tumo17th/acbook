@@ -10,8 +10,7 @@
         <a href="api/resource/expense">Weekly Expense</a>
     </p>
     <form action="api/resource/expense" method="POST">
-        <input type="hidden" name="_method" value="PUT" />
-        <input type="submit" value="Create Expenses" />
+        <input type="submit" value="Update Expenses" />
     </form>
     <p>
         <a href="api/resource/income">Monthly Income</a>
