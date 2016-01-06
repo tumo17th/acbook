@@ -51,8 +51,14 @@ public class ExpenseDaoH2 implements ExpenseDao {
         });
     }
 
+    private static final String INSERT = "INSERT INTO expense (EXPENSE_TYPE, EXPENSE_NAME, PRICE, EXPENSE_DATE, ORD, PRC_DATE) VALUES (?, ?, ?, ?, ?, ?)";
+
     @Override
     public void create(List<Expense> expenseList) {
+        for (Expense e : expenseList) {
+            template.update(INSERT, e.getExpenseType().getExpenseTypeId(), e.getExpenseName(), e.getPrice(),
+                    e.getExpenseDate(), e.getOrd(), e.getPrcDate());
+        }
     }
 
     @Override
